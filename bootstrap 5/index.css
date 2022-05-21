@@ -1,0 +1,16 @@
+#footer {
+    height: 70px;
+    background-color: #ea4492;
+}
+
+#footer a {
+    color: white
+}
+
+.perrito {
+    background: rgb(184, 190, 221);
+}
+
+body {
+    background-color: #333333;
+}
