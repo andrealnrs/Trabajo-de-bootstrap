@@ -1,16 +1,26 @@
 #footer {
     height: 70px;
-    background-color: #ea4492;
+    background-color: #004e9a;
 }
 
 #footer a {
-    color: white
+    color: white;
+    text-decoration: none;
+}
+td img {
+    width: 30px;
 }
 
 .perrito {
     background: rgb(184, 190, 221);
 }
 
-body {
+.andrea {
     background-color: #333333;
+}
+.breakingBad {
+    padding: 24px 12px;
+}
+.andres {
+    margin-bottom: 12px;
 }
