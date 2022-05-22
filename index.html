@@ -67,25 +67,28 @@
         <div class="col">
           <div class="p-3">
             <label for="autoSizingSelect" class="form-label text-primary">Actividad</label>
-            <input type="text" class="form-control" placeholder="nombre de la actividad"
+            <input type="text" class="form-control datos" placeholder="nombre de la actividad"
               aria-label="nombre de la actividad">
           </div>
         </div>
         <div class="col">
           <div class="p-3">
             <label for="autoSizingSelect" class="form-label text-primary">¿A qué modulo pertenece?</label>
-            <select class="form-select" id="autoSizingSelect">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+            <select class="form-select datos" id="autoSizingSelect">
+              <option selected>SELECCIONE EL MODULO</option>
+              <option value="1">Modulo administrador</option>
+              <option value="2">Modulo de contratacion</option>
+              <option value="3">Modulo de planeación</option>
+              <option value="4">Modulo de almacen</option>
+              <option value="5">Modulo misional</option>
+              <option value="6">Modulo de evaluación y control</option>
             </select>
           </div>
         </div>
         <div class="col">
           <div class="p-3">
             <label for="autoSizingSelect" class="form-label text-primary">Descripcion</label>
-            <input type="text" class="form-control" placeholder="descripcion de la actividad"
+            <input type="text" class="form-control datos" placeholder="descripcion de la actividad"
               aria-label="descripcion de la actividad">
           </div>
         </div>
@@ -94,23 +97,25 @@
         <div class="col">
           <div class="p-3">
             <label for="autoSizingSelect" class="form-label text-primary">Redireccion</label>
-            <input type="text" class="form-control" placeholder="/localhost" aria-label="/localhost">
+            <input type="text" class="form-control datos" placeholder="/localhost" 
+            aria-label="/localhost">
           </div>
         </div>
         <div class="col">
           <div class="p-3">
             <label for="autoSizingSelect" class="form-label text-primary">Imagen</label>
-            <input type="text" class="form-control" placeholder="/localhost" aria-label="/localhost">
+            <input type="text" class="form-control datos" placeholder="/localhost" 
+            aria-label="/localhost">
           </div>
         </div>
         <div class="col">
           <div class="p-3">
             <label for="autoSizingSelect" class="form-label text-primary">Anidar actividad en</label>
-            <select class="form-select" id="autoSizingSelect">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+            <select class="form-select datos" id="autoSizingSelect">
+              <option selected>SELECCIONE UNA ACTIVIDAD PADRE</option>
+              <option value="1">Gestion de Usuario</option>
+              <option value="2">Configuración</option>
+              <option value="3">Auditoria</option>
             </select>
           </div>
         </div>
@@ -125,7 +130,7 @@
       </div>
       <!-- Button trigger modal -->
       <div class="d-grid gap-2 py-2">
-        <button class="btn btn-info" type="button">Button</button>
+        <button class="btn btn-info" type="button" onclick="guardar()">Button</button>
       </div>
     </div>
 
@@ -163,7 +168,7 @@
             <td>Gestion de usuarios</td>
             <td>/gestionar-usuarios</td>
             <td>fa fa-user-plus</td>
-            <td><button class="btn btn-danger"><i class="bi bi-trash3"></i></button></td>
+            <td><button class="btn btn-danger trash"><i class="bi bi-trash3"></i></button></td>
             <td><button class="btn btn-info"><i class="bi bi-pencil-square"></i></button></td>
           </tr>
           <tr>
@@ -174,7 +179,7 @@
             <td>descripcion 1</td>
             <td>/localhost/</td>
             <td>/localhost/</td>
-            <td><button class="btn btn-danger"><i class="bi bi-trash3"></i></button></td>
+            <td><button class="btn btn-danger trash"><i class="bi bi-trash3"></i></button></td>
             <td><button class="btn btn-info"><i class="bi bi-pencil-square"></i></button></td>
           </tr>
           <tr>
@@ -185,7 +190,7 @@
             <td>descripcion 1</td>
             <td>/localhost/</td>
             <td>/localhost/</td>
-            <td><button class="btn btn-danger"><i class="bi bi-trash3"></i></button></td>
+            <td><button class="btn btn-danger trash"><i class="bi bi-trash3"></i></button></td>
             <td><button class="btn btn-info"><i class="bi bi-pencil-square"></i></button></td>
           </tr>
         </tbody>
@@ -197,7 +202,7 @@
           <td>descripcion 2</td>
           <td>/localhost/</td>
           <td>/localhost/</td>
-          <td><button class="btn btn-danger"><i class="bi bi-trash3"></i></button></td>
+          <td><button class="btn btn-danger trash"><i class="bi bi-trash3"></i></button></td>
           <td><button class="btn btn-info"><i class="bi bi-pencil-square"></i></button></td>
         </tr>
         </tbody>
@@ -209,7 +214,7 @@
           <td>Gestion de Actividades</td>
           <td>/actividad</td>
           <td>fa fa-user-plus</td>
-          <td><button class="btn btn-danger"><i class="bi bi-trash3"></i></button></td>
+          <td><button class="btn btn-danger trash"><i class="bi bi-trash3"></i></button></td>
           <td><button class="btn btn-info"><i class="bi bi-pencil-square"></i></button></td>
         </tr>
         </tbody>
