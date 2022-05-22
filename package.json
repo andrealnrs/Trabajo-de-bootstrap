@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "bootstrap-icons": "^1.8.2",
+    "sweetalert2": "^11.4.14"
+  },
+  "name": "cuentanos",
+  "version": "1.0.0",
+  "description": "si cuentanos",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/andrealnrs/Trabajo-de-bootstrap.git)"
+  },
+  "author": "loren linares <llinaresmarquez@gmail.com>",
+  "license": "MIT"
+}
